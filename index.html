@@ -1,49 +1,22 @@
 <!DOCTYPE html>
+<!-- Test Page made in order to try the stuff learned on CodeAcademy. Chance of finding a pug in the street
+Goals of the page:	- Make an animation, links and different stuff (12/04/19)
+-->
 <html>
   <head>
     <meta charset="utf-8">
     <title>My test page</title>
   </head>
   <body>
-    <h1>Hello World</h1>
-	  <h2>CatPhotoApp</h2>
-	  <p>Hello Paragraph</p>
-    <img src="images/my-image.jpg" alt="My test image">
-	  <style>
-  .balls {
-    border-radius: 50%;
-    position: fixed;  
-    width: 50px;
-    height: 50px;
-    top: 60%;
-    animation-name: jump;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-  }
-  #red {
-    background: red;
-    left: 25%;
-    animation-timing-function: linear;
-  }
-  #blue {
-    background: blue;
-    left: 50%;
-    animation-timing-function: ease-out;
-  }
-  #green {
-    background: green;
-    left: 75%;
-    animation-timing-function: cubic-bezier(0.311, 0.441, 0.444, 1.649);
-  }
-
-  @keyframes jump {
-    50% {
-      top: 10%;
-    }
-  }
-</style>
-<div class="balls" id="red"></div>
-<div class="balls" id="blue"></div>
-<div class="balls" id="green"></div>
+    <h1>Chance of finding a cute pug on the street</h1>
+	  <h2>Want to find this cute thing?</h2>
+	  <img src="images/my-image.jpg" alt="My test image">
+	  <p>First of all, a test is need to be taken:</p>
+    		<form action="/url-where-you-want-to-submit-form-data">
+		<p> Which color do you prefer? </p>
+ 		<label><input type="radio" name="indoor-outdoor"> Black</label>
+		<label><input type="radio" name="indoor-outdoor"> White</label>
+    		<label><input type="radio" name="indoor-outdoor"> Caramel</label><br>
+  	</form>
   </body>
 </html>
