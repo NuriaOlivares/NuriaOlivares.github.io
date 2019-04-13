@@ -6,10 +6,28 @@ Goals of the page:	- Make an animation, links and different stuff (12/04/19)
   <head>
     <meta charset="utf-8">
     <title>My test page</title>
+	  <script>
+		function clickCounter() {
+ 		 if (typeof(Storage) !== "undefined") {
+   		 if (localStorage.clickcount) {
+    		  localStorage.clickcount = Number(localStorage.clickcount)+1;
+    		} else {
+    		  localStorage.clickcount = 1;
+    		}
+    		document.getElementById("result").innerHTML = "You have clicked the button " + localStorage.clickcount + " time(s).";
+ 		 } else {
+  		  document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+		  }
+		}
+	</script>
   </head>
   <body>
-    <h1>Chance of finding a cute pug on the street</h1>
-	  <h2>Want to find this cute thing?</h2>
+	  <p><button onclick="clickCounter()" type="button">Click me!</button></p>
+		<div id="result"></div>
+		<p>Click the button to see the counter increase.</p>
+		<p>Close the browser tab (or window), and try again, and the counter will continue to count (is not reset).</p>
+   	<h1>Chance of finding a cute pug on the street</h1>
+	<h2>Want to find this cute thing?</h2>
 	  <img src="images/my-image.jpg" alt="My test image">
 	  <p>First of all, a test is need to be taken:</p>
     		<form action="/url-where-you-want-to-submit-form-data">
